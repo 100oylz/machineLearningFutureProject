@@ -1,0 +1,20 @@
+MLP Model:
+NetWork(
+  (fc): Sequential(
+    (0): Linear(in_features=18000, out_features=2048, bias=True)
+    (1): Dropout(p=0.5, inplace=False)
+    (2): ReLU()
+    (3): Linear(in_features=2048, out_features=1024, bias=True)
+    (4): Dropout(p=0.5, inplace=False)
+    (5): ReLU()
+    (6): Linear(in_features=1024, out_features=512, bias=True)
+    (7): Dropout(p=0.5, inplace=False)
+    (8): ReLU()
+    (9): Linear(in_features=512, out_features=256, bias=True)
+    (10): Dropout(p=0.5, inplace=False)
+    (11): ReLU()
+    (12): Linear(in_features=256, out_features=2, bias=True)
+  )
+)
+tensor([0.0211, 0.0116], device='cuda:0')
+Epoch [1/1000], Loss: 0.0000, Acc: 1.0000,ValidSet Acc: 0.6042

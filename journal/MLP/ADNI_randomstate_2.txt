@@ -1,0 +1,113 @@
+MLP Model:
+NetWork(
+  (fc): Sequential(
+    (0): Linear(in_features=186, out_features=256, bias=True)
+    (1): Dropout(p=0.5, inplace=False)
+    (2): ReLU()
+    (3): Linear(in_features=256, out_features=128, bias=True)
+    (4): Dropout(p=0.5, inplace=False)
+    (5): ReLU()
+    (6): Linear(in_features=128, out_features=5, bias=True)
+  )
+)
+tensor([0.0392, 0.0202, 0.0357, 0.0465, 0.0192], device='cuda:0')
+Epoch [1/1000], Loss: 0.5502, Acc: 0.7721,ValidSet Acc: 0.3385
+Epoch [2/1000], Loss: 0.9876, Acc: 0.5879,ValidSet Acc: 0.3385
+Epoch [3/1000], Loss: 0.9517, Acc: 0.6273,ValidSet Acc: 0.3385
+Epoch [4/1000], Loss: 0.9735, Acc: 0.6255,ValidSet Acc: 0.3385
+Epoch [5/1000], Loss: 0.9717, Acc: 0.5639,ValidSet Acc: 0.3385
+Epoch [6/1000], Loss: 0.9616, Acc: 0.5728,ValidSet Acc: 0.3385
+Epoch [7/1000], Loss: 0.9980, Acc: 0.5818,ValidSet Acc: 0.3385
+Epoch [8/1000], Loss: 0.9747, Acc: 0.5926,ValidSet Acc: 0.3385
+Epoch [9/1000], Loss: 0.9636, Acc: 0.5879,ValidSet Acc: 0.3385
+Epoch [10/1000], Loss: 0.8601, Acc: 0.6429,ValidSet Acc: 0.3385
+Epoch [11/1000], Loss: 0.9930, Acc: 0.6024,ValidSet Acc: 0.3385
+Epoch [12/1000], Loss: 1.0178, Acc: 0.5752,ValidSet Acc: 0.3385
+Epoch [13/1000], Loss: 1.0305, Acc: 0.5719,ValidSet Acc: 0.3229
+Epoch [14/1000], Loss: 0.9639, Acc: 0.6001,ValidSet Acc: 0.3073
+Epoch [15/1000], Loss: 0.8920, Acc: 0.6335,ValidSet Acc: 0.3073
+Epoch [16/1000], Loss: 0.9699, Acc: 0.6288,ValidSet Acc: 0.3073
+Epoch [17/1000], Loss: 0.8844, Acc: 0.6353,ValidSet Acc: 0.3073
+Epoch [18/1000], Loss: 0.9298, Acc: 0.6198,ValidSet Acc: 0.3073
+Epoch [19/1000], Loss: 0.9772, Acc: 0.5794,ValidSet Acc: 0.3073
+Epoch [20/1000], Loss: 0.9299, Acc: 0.6165,ValidSet Acc: 0.3073
+Epoch [21/1000], Loss: 0.9188, Acc: 0.6015,ValidSet Acc: 0.3073
+Epoch [22/1000], Loss: 0.8345, Acc: 0.6386,ValidSet Acc: 0.3073
+Epoch [23/1000], Loss: 0.8420, Acc: 0.6593,ValidSet Acc: 0.3073
+Epoch [24/1000], Loss: 0.9567, Acc: 0.5916,ValidSet Acc: 0.3073
+Epoch [25/1000], Loss: 0.8981, Acc: 0.6147,ValidSet Acc: 0.3229
+Epoch [26/1000], Loss: 0.8639, Acc: 0.6316,ValidSet Acc: 0.3229
+Epoch [27/1000], Loss: 0.8399, Acc: 0.6626,ValidSet Acc: 0.3229
+Epoch [28/1000], Loss: 0.8532, Acc: 0.5916,ValidSet Acc: 0.3229
+Epoch [29/1000], Loss: 0.8757, Acc: 0.6494,ValidSet Acc: 0.3229
+Epoch [30/1000], Loss: 0.9080, Acc: 0.6147,ValidSet Acc: 0.3229
+Epoch [31/1000], Loss: 0.8626, Acc: 0.6363,ValidSet Acc: 0.3229
+Epoch [32/1000], Loss: 0.9504, Acc: 0.6330,ValidSet Acc: 0.3229
+Epoch [33/1000], Loss: 0.8804, Acc: 0.6048,ValidSet Acc: 0.3229
+Epoch [34/1000], Loss: 0.7872, Acc: 0.6635,ValidSet Acc: 0.3229
+Epoch [35/1000], Loss: 0.9413, Acc: 0.6476,ValidSet Acc: 0.3229
+Epoch [36/1000], Loss: 0.9031, Acc: 0.6288,ValidSet Acc: 0.3229
+Epoch [37/1000], Loss: 0.9347, Acc: 0.6001,ValidSet Acc: 0.3229
+Epoch [38/1000], Loss: 0.9327, Acc: 0.6203,ValidSet Acc: 0.3229
+Epoch [39/1000], Loss: 0.8869, Acc: 0.6043,ValidSet Acc: 0.3229
+Epoch [40/1000], Loss: 0.8640, Acc: 0.6363,ValidSet Acc: 0.3229
+Epoch [41/1000], Loss: 0.7995, Acc: 0.6842,ValidSet Acc: 0.3229
+Epoch [42/1000], Loss: 0.8205, Acc: 0.6400,ValidSet Acc: 0.3229
+Epoch [43/1000], Loss: 0.7572, Acc: 0.6875,ValidSet Acc: 0.3229
+Epoch [44/1000], Loss: 0.8394, Acc: 0.6372,ValidSet Acc: 0.3229
+Epoch [45/1000], Loss: 0.8135, Acc: 0.6823,ValidSet Acc: 0.3229
+Epoch [46/1000], Loss: 0.8267, Acc: 0.6659,ValidSet Acc: 0.3229
+Epoch [47/1000], Loss: 0.8098, Acc: 0.6626,ValidSet Acc: 0.3229
+Epoch [48/1000], Loss: 0.8079, Acc: 0.6626,ValidSet Acc: 0.3385
+Epoch [49/1000], Loss: 0.8083, Acc: 0.6701,ValidSet Acc: 0.3385
+Epoch [50/1000], Loss: 0.7720, Acc: 0.6429,ValidSet Acc: 0.3385
+Epoch [51/1000], Loss: 0.7841, Acc: 0.6617,ValidSet Acc: 0.3385
+Epoch [52/1000], Loss: 0.7847, Acc: 0.6466,ValidSet Acc: 0.3229
+Epoch [53/1000], Loss: 0.7838, Acc: 0.6725,ValidSet Acc: 0.3229
+Epoch [54/1000], Loss: 0.8233, Acc: 0.6494,ValidSet Acc: 0.3229
+Epoch [55/1000], Loss: 0.7835, Acc: 0.6560,ValidSet Acc: 0.3229
+Epoch [56/1000], Loss: 0.8033, Acc: 0.6527,ValidSet Acc: 0.3021
+Epoch [57/1000], Loss: 0.8114, Acc: 0.6541,ValidSet Acc: 0.3021
+Epoch [58/1000], Loss: 0.8206, Acc: 0.6541,ValidSet Acc: 0.3229
+Epoch [59/1000], Loss: 0.7737, Acc: 0.6570,ValidSet Acc: 0.3229
+Epoch [60/1000], Loss: 0.7661, Acc: 0.6640,ValidSet Acc: 0.3229
+Epoch [61/1000], Loss: 0.7031, Acc: 0.6988,ValidSet Acc: 0.2865
+Epoch [62/1000], Loss: 0.7541, Acc: 0.6523,ValidSet Acc: 0.3021
+Epoch [63/1000], Loss: 0.8371, Acc: 0.6772,ValidSet Acc: 0.3073
+Epoch [64/1000], Loss: 0.7330, Acc: 0.6922,ValidSet Acc: 0.3073
+Epoch [65/1000], Loss: 0.7075, Acc: 0.6988,ValidSet Acc: 0.3073
+Epoch [66/1000], Loss: 0.7333, Acc: 0.6617,ValidSet Acc: 0.3073
+Epoch [67/1000], Loss: 0.7023, Acc: 0.7021,ValidSet Acc: 0.3073
+Epoch [68/1000], Loss: 0.7529, Acc: 0.6790,ValidSet Acc: 0.3073
+Epoch [69/1000], Loss: 0.7537, Acc: 0.6725,ValidSet Acc: 0.2865
+Epoch [70/1000], Loss: 0.7149, Acc: 0.7030,ValidSet Acc: 0.2865
+Epoch [71/1000], Loss: 0.7980, Acc: 0.6649,ValidSet Acc: 0.2865
+Epoch [72/1000], Loss: 0.7673, Acc: 0.7119,ValidSet Acc: 0.2865
+Epoch [73/1000], Loss: 0.7986, Acc: 0.6758,ValidSet Acc: 0.2865
+Epoch [74/1000], Loss: 0.7013, Acc: 0.7119,ValidSet Acc: 0.2865
+Epoch [75/1000], Loss: 0.6534, Acc: 0.7171,ValidSet Acc: 0.2865
+Epoch [76/1000], Loss: 0.7227, Acc: 0.7185,ValidSet Acc: 0.2865
+Epoch [77/1000], Loss: 0.7001, Acc: 0.7237,ValidSet Acc: 0.2865
+Epoch [78/1000], Loss: 0.7077, Acc: 0.6875,ValidSet Acc: 0.2708
+Epoch [79/1000], Loss: 0.7835, Acc: 0.6847,ValidSet Acc: 0.2708
+Epoch [80/1000], Loss: 0.6863, Acc: 0.6734,ValidSet Acc: 0.2708
+Epoch [81/1000], Loss: 0.6590, Acc: 0.7270,ValidSet Acc: 0.2708
+Epoch [82/1000], Loss: 0.7528, Acc: 0.7119,ValidSet Acc: 0.2708
+Epoch [83/1000], Loss: 0.7373, Acc: 0.6988,ValidSet Acc: 0.2708
+Epoch [84/1000], Loss: 0.6720, Acc: 0.7021,ValidSet Acc: 0.2708
+Epoch [85/1000], Loss: 0.6165, Acc: 0.7326,ValidSet Acc: 0.2708
+Epoch [86/1000], Loss: 0.7079, Acc: 0.7138,ValidSet Acc: 0.2708
+Epoch [87/1000], Loss: 0.7058, Acc: 0.6541,ValidSet Acc: 0.2708
+Epoch [88/1000], Loss: 0.7203, Acc: 0.7044,ValidSet Acc: 0.2708
+Epoch [89/1000], Loss: 0.7082, Acc: 0.6856,ValidSet Acc: 0.2708
+Epoch [90/1000], Loss: 0.7842, Acc: 0.6729,ValidSet Acc: 0.2708
+Epoch [91/1000], Loss: 0.6840, Acc: 0.7209,ValidSet Acc: 0.2708
+Epoch [92/1000], Loss: 0.6703, Acc: 0.7185,ValidSet Acc: 0.2708
+Epoch [93/1000], Loss: 0.6890, Acc: 0.6814,ValidSet Acc: 0.2708
+Epoch [94/1000], Loss: 0.6592, Acc: 0.6988,ValidSet Acc: 0.2708
+Epoch [95/1000], Loss: 0.6972, Acc: 0.7105,ValidSet Acc: 0.2708
+Epoch [96/1000], Loss: 0.7109, Acc: 0.7039,ValidSet Acc: 0.2708
+Epoch [97/1000], Loss: 0.7204, Acc: 0.6800,ValidSet Acc: 0.2708
+Epoch [98/1000], Loss: 0.7052, Acc: 0.6988,ValidSet Acc: 0.2708
+Epoch [99/1000], Loss: 0.5899, Acc: 0.7340,ValidSet Acc: 0.2708
+Epoch [100/1000], Loss: 0.6661, Acc: 0.7086,ValidSet Acc: 0.2708

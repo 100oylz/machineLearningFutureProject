@@ -1,0 +1,1015 @@
+Encoder(
+  (conv2d): Sequential(
+    (0): Conv2d(1, 16, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): PReLU(num_parameters=1)
+    (3): Conv2d(16, 32, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): PReLU(num_parameters=1)
+    (6): Conv2d(32, 128, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (7): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): PReLU(num_parameters=1)
+  )
+  (fc): Linear(in_features=128, out_features=1, bias=True)
+)
+Decoder(
+  (fc): Linear(in_features=1, out_features=32, bias=True)
+  (deconv2d): Sequential(
+    (0): ConvTranspose2d(32, 16, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+    (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): PReLU(num_parameters=1)
+    (3): ConvTranspose2d(16, 1, kernel_size=(1, 3), stride=(1, 1), padding=(0, 1))
+  )
+)
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0005
+)
+MSELoss()
+Epoch [1/800], Saved!
+Epoch [1/800], Loss: 2.4891
+Epoch [2/800], Saved!
+Epoch [2/800], Loss: 1.4659
+Epoch [3/800], Saved!
+Epoch [3/800], Loss: 1.1753
+Epoch [4/800], Saved!
+Epoch [4/800], Loss: 1.0970
+Epoch [5/800], Saved!
+Epoch [5/800], Loss: 1.0531
+Epoch [6/800], Saved!
+Epoch [6/800], Loss: 1.0194
+Epoch [7/800], Loss: 1.0257
+Epoch [8/800], Saved!
+Epoch [8/800], Loss: 1.0080
+Epoch [9/800], Saved!
+Epoch [9/800], Loss: 0.9957
+Epoch [10/800], Saved!
+Epoch [10/800], Loss: 0.9869
+Epoch [11/800], Loss: 0.9952
+Epoch [12/800], Loss: 0.9931
+Epoch [13/800], Saved!
+Epoch [13/800], Loss: 0.9863
+Epoch [14/800], Loss: 0.9938
+Epoch [15/800], Loss: 0.9885
+Epoch [16/800], Saved!
+Epoch [16/800], Loss: 0.9845
+Epoch [17/800], Saved!
+Epoch [17/800], Loss: 0.9769
+Epoch [18/800], Loss: 0.9821
+Epoch [19/800], Loss: 0.9796
+Epoch [20/800], Loss: 0.9796
+Epoch [21/800], Loss: 0.9776
+Epoch [22/800], Saved!
+Epoch [22/800], Loss: 0.9697
+Epoch [23/800], Loss: 0.9769
+Epoch [24/800], Loss: 0.9713
+Epoch [25/800], Loss: 0.9745
+Epoch [26/800], Loss: 0.9711
+Epoch [27/800], Loss: 0.9698
+Epoch [28/800], Saved!
+Epoch [28/800], Loss: 0.9621
+Epoch [29/800], Loss: 0.9739
+Epoch [30/800], Loss: 0.9680
+Epoch [31/800], Loss: 0.9653
+Epoch [32/800], Saved!
+Epoch [32/800], Loss: 0.9601
+Epoch [33/800], Loss: 0.9632
+Epoch [34/800], Loss: 0.9644
+Epoch [35/800], Loss: 0.9632
+Epoch [36/800], Saved!
+Epoch [36/800], Loss: 0.9519
+Epoch [37/800], Loss: 0.9605
+Epoch [38/800], Loss: 0.9530
+Epoch [39/800], Loss: 0.9522
+Epoch [40/800], Saved!
+Epoch [40/800], Loss: 0.9486
+Epoch [41/800], Saved!
+Epoch [41/800], Loss: 0.9440
+Epoch [42/800], Saved!
+Epoch [42/800], Loss: 0.9399
+Epoch [43/800], Loss: 0.9436
+Epoch [44/800], Loss: 0.9418
+Epoch [45/800], Saved!
+Epoch [45/800], Loss: 0.9388
+Epoch [46/800], Saved!
+Epoch [46/800], Loss: 0.9314
+Epoch [47/800], Loss: 0.9380
+Epoch [48/800], Loss: 0.9318
+Epoch [49/800], Saved!
+Epoch [49/800], Loss: 0.9250
+Epoch [50/800], Loss: 0.9297
+Epoch [51/800], Saved!
+Epoch [51/800], Loss: 0.9208
+Epoch [52/800], Saved!
+Epoch [52/800], Loss: 0.9208
+Epoch [53/800], Loss: 0.9253
+Epoch [54/800], Saved!
+Epoch [54/800], Loss: 0.9138
+Epoch [55/800], Saved!
+Epoch [55/800], Loss: 0.9130
+Epoch [56/800], Saved!
+Epoch [56/800], Loss: 0.8989
+Epoch [57/800], Saved!
+Epoch [57/800], Loss: 0.8979
+Epoch [58/800], Loss: 0.8987
+Epoch [59/800], Saved!
+Epoch [59/800], Loss: 0.8970
+Epoch [60/800], Saved!
+Epoch [60/800], Loss: 0.8838
+Epoch [61/800], Loss: 0.8846
+Epoch [62/800], Saved!
+Epoch [62/800], Loss: 0.8791
+Epoch [63/800], Loss: 0.8804
+Epoch [64/800], Saved!
+Epoch [64/800], Loss: 0.8718
+Epoch [65/800], Loss: 0.8745
+Epoch [66/800], Saved!
+Epoch [66/800], Loss: 0.8679
+Epoch [67/800], Saved!
+Epoch [67/800], Loss: 0.8631
+Epoch [68/800], Saved!
+Epoch [68/800], Loss: 0.8569
+Epoch [69/800], Loss: 0.8602
+Epoch [70/800], Loss: 0.8570
+Epoch [71/800], Saved!
+Epoch [71/800], Loss: 0.8417
+Epoch [72/800], Loss: 0.8437
+Epoch [73/800], Loss: 0.8433
+Epoch [74/800], Loss: 0.8476
+Epoch [75/800], Loss: 0.8422
+Epoch [76/800], Saved!
+Epoch [76/800], Loss: 0.8391
+Epoch [77/800], Saved!
+Epoch [77/800], Loss: 0.8282
+Epoch [78/800], Loss: 0.8310
+Epoch [79/800], Saved!
+Epoch [79/800], Loss: 0.8266
+Epoch [80/800], Loss: 0.8317
+Epoch [81/800], Saved!
+Epoch [81/800], Loss: 0.8241
+Epoch [82/800], Saved!
+Epoch [82/800], Loss: 0.8234
+Epoch [83/800], Saved!
+Epoch [83/800], Loss: 0.8167
+Epoch [84/800], Saved!
+Epoch [84/800], Loss: 0.8148
+Epoch [85/800], Saved!
+Epoch [85/800], Loss: 0.8130
+Epoch [86/800], Saved!
+Epoch [86/800], Loss: 0.8124
+Epoch [87/800], Saved!
+Epoch [87/800], Loss: 0.8097
+Epoch [88/800], Loss: 0.8134
+Epoch [89/800], Loss: 0.8116
+Epoch [90/800], Saved!
+Epoch [90/800], Loss: 0.8065
+Epoch [91/800], Saved!
+Epoch [91/800], Loss: 0.7982
+Epoch [92/800], Saved!
+Epoch [92/800], Loss: 0.7963
+Epoch [93/800], Saved!
+Epoch [93/800], Loss: 0.7934
+Epoch [94/800], Loss: 0.7945
+Epoch [95/800], Saved!
+Epoch [95/800], Loss: 0.7878
+Epoch [96/800], Saved!
+Epoch [96/800], Loss: 0.7839
+Epoch [97/800], Saved!
+Epoch [97/800], Loss: 0.7822
+Epoch [98/800], Saved!
+Epoch [98/800], Loss: 0.7773
+Epoch [99/800], Loss: 0.7805
+Epoch [100/800], Loss: 0.7884
+Epoch [101/800], Loss: 0.7789
+Epoch [102/800], Saved!
+Epoch [102/800], Loss: 0.7762
+Epoch [103/800], Loss: 0.7824
+Epoch [104/800], Saved!
+Epoch [104/800], Loss: 0.7683
+Epoch [105/800], Saved!
+Epoch [105/800], Loss: 0.7666
+Epoch [106/800], Loss: 0.7673
+Epoch [107/800], Saved!
+Epoch [107/800], Loss: 0.7611
+Epoch [108/800], Saved!
+Epoch [108/800], Loss: 0.7576
+Epoch [109/800], Saved!
+Epoch [109/800], Loss: 0.7555
+Epoch [110/800], Saved!
+Epoch [110/800], Loss: 0.7537
+Epoch [111/800], Saved!
+Epoch [111/800], Loss: 0.7493
+Epoch [112/800], Loss: 0.7530
+Epoch [113/800], Saved!
+Epoch [113/800], Loss: 0.7389
+Epoch [114/800], Loss: 0.7456
+Epoch [115/800], Loss: 0.7475
+Epoch [116/800], Loss: 0.7510
+Epoch [117/800], Loss: 0.7395
+Epoch [118/800], Saved!
+Epoch [118/800], Loss: 0.7351
+Epoch [119/800], Saved!
+Epoch [119/800], Loss: 0.7302
+Epoch [120/800], Saved!
+Epoch [120/800], Loss: 0.7277
+Epoch [121/800], Loss: 0.7431
+Epoch [122/800], Loss: 0.7292
+Epoch [123/800], Loss: 0.7296
+Epoch [124/800], Loss: 0.7277
+Epoch [125/800], Loss: 0.7298
+Epoch [126/800], Loss: 0.7348
+Epoch [127/800], Saved!
+Epoch [127/800], Loss: 0.7199
+Epoch [128/800], Loss: 0.7249
+Epoch [129/800], Loss: 0.7215
+Epoch [130/800], Saved!
+Epoch [130/800], Loss: 0.7181
+Epoch [131/800], Saved!
+Epoch [131/800], Loss: 0.7086
+Epoch [132/800], Saved!
+Epoch [132/800], Loss: 0.7033
+Epoch [133/800], Loss: 0.7036
+Epoch [134/800], Loss: 0.7108
+Epoch [135/800], Saved!
+Epoch [135/800], Loss: 0.6996
+Epoch [136/800], Loss: 0.7052
+Epoch [137/800], Loss: 0.7011
+Epoch [138/800], Saved!
+Epoch [138/800], Loss: 0.6968
+Epoch [139/800], Saved!
+Epoch [139/800], Loss: 0.6921
+Epoch [140/800], Loss: 0.7059
+Epoch [141/800], Saved!
+Epoch [141/800], Loss: 0.6902
+Epoch [142/800], Loss: 0.6941
+Epoch [143/800], Saved!
+Epoch [143/800], Loss: 0.6892
+Epoch [144/800], Loss: 0.6905
+Epoch [145/800], Saved!
+Epoch [145/800], Loss: 0.6851
+Epoch [146/800], Saved!
+Epoch [146/800], Loss: 0.6827
+Epoch [147/800], Loss: 0.6915
+Epoch [148/800], Loss: 0.6907
+Epoch [149/800], Loss: 0.6954
+Epoch [150/800], Loss: 0.6871
+Epoch [151/800], Saved!
+Epoch [151/800], Loss: 0.6823
+Epoch [152/800], Saved!
+Epoch [152/800], Loss: 0.6779
+Epoch [153/800], Saved!
+Epoch [153/800], Loss: 0.6722
+Epoch [154/800], Saved!
+Epoch [154/800], Loss: 0.6707
+Epoch [155/800], Loss: 0.6738
+Epoch [156/800], Saved!
+Epoch [156/800], Loss: 0.6639
+Epoch [157/800], Loss: 0.6644
+Epoch [158/800], Loss: 0.6655
+Epoch [159/800], Loss: 0.6685
+Epoch [160/800], Saved!
+Epoch [160/800], Loss: 0.6624
+Epoch [161/800], Saved!
+Epoch [161/800], Loss: 0.6602
+Epoch [162/800], Loss: 0.6651
+Epoch [163/800], Saved!
+Epoch [163/800], Loss: 0.6573
+Epoch [164/800], Saved!
+Epoch [164/800], Loss: 0.6517
+Epoch [165/800], Loss: 0.6576
+Epoch [166/800], Loss: 0.6580
+Epoch [167/800], Loss: 0.6599
+Epoch [168/800], Loss: 0.6531
+Epoch [169/800], Saved!
+Epoch [169/800], Loss: 0.6488
+Epoch [170/800], Saved!
+Epoch [170/800], Loss: 0.6469
+Epoch [171/800], Loss: 0.6508
+Epoch [172/800], Loss: 0.6512
+Epoch [173/800], Saved!
+Epoch [173/800], Loss: 0.6403
+Epoch [174/800], Loss: 0.6420
+Epoch [175/800], Saved!
+Epoch [175/800], Loss: 0.6378
+Epoch [176/800], Loss: 0.6410
+Epoch [177/800], Loss: 0.6447
+Epoch [178/800], Saved!
+Epoch [178/800], Loss: 0.6327
+Epoch [179/800], Loss: 0.6379
+Epoch [180/800], Loss: 0.6374
+Epoch [181/800], Loss: 0.6387
+Epoch [182/800], Loss: 0.6360
+Epoch [183/800], Loss: 0.6435
+Epoch [184/800], Saved!
+Epoch [184/800], Loss: 0.6281
+Epoch [185/800], Saved!
+Epoch [185/800], Loss: 0.6269
+Epoch [186/800], Saved!
+Epoch [186/800], Loss: 0.6264
+Epoch [187/800], Loss: 0.6314
+Epoch [188/800], Loss: 0.6386
+Epoch [189/800], Loss: 0.6343
+Epoch [190/800], Saved!
+Epoch [190/800], Loss: 0.6256
+Epoch [191/800], Loss: 0.6284
+Epoch [192/800], Saved!
+Epoch [192/800], Loss: 0.6184
+Epoch [193/800], Loss: 0.6200
+Epoch [194/800], Saved!
+Epoch [194/800], Loss: 0.6150
+Epoch [195/800], Loss: 0.6179
+Epoch [196/800], Loss: 0.6295
+Epoch [197/800], Loss: 0.6208
+Epoch [198/800], Loss: 0.6225
+Epoch [199/800], Loss: 0.6151
+Epoch [200/800], Saved!
+Epoch [200/800], Loss: 0.6080
+Epoch [201/800], Saved!
+Epoch [201/800], Loss: 0.6069
+Epoch [202/800], Loss: 0.6075
+Epoch [203/800], Loss: 0.6074
+Epoch [204/800], Loss: 0.6186
+Epoch [205/800], Loss: 0.6196
+Epoch [206/800], Loss: 0.6177
+Epoch [207/800], Loss: 0.6091
+Epoch [208/800], Saved!
+Epoch [208/800], Loss: 0.6062
+Epoch [209/800], Saved!
+Epoch [209/800], Loss: 0.5960
+Epoch [210/800], Saved!
+Epoch [210/800], Loss: 0.5952
+Epoch [211/800], Loss: 0.5998
+Epoch [212/800], Loss: 0.5955
+Epoch [213/800], Loss: 0.5996
+Epoch [214/800], Saved!
+Epoch [214/800], Loss: 0.5924
+Epoch [215/800], Loss: 0.5930
+Epoch [216/800], Saved!
+Epoch [216/800], Loss: 0.5905
+Epoch [217/800], Loss: 0.5906
+Epoch [218/800], Saved!
+Epoch [218/800], Loss: 0.5850
+Epoch [219/800], Loss: 0.5889
+Epoch [220/800], Saved!
+Epoch [220/800], Loss: 0.5848
+Epoch [221/800], Loss: 0.5870
+Epoch [222/800], Loss: 0.5878
+Epoch [223/800], Loss: 0.5887
+Epoch [224/800], Loss: 0.5860
+Epoch [225/800], Loss: 0.5875
+Epoch [226/800], Loss: 0.5881
+Epoch [227/800], Loss: 0.5977
+Epoch [228/800], Loss: 0.5927
+Epoch [229/800], Loss: 0.5868
+Epoch [230/800], Saved!
+Epoch [230/800], Loss: 0.5833
+Epoch [231/800], Saved!
+Epoch [231/800], Loss: 0.5818
+Epoch [232/800], Loss: 0.5834
+Epoch [233/800], Saved!
+Epoch [233/800], Loss: 0.5687
+Epoch [234/800], Loss: 0.5766
+Epoch [235/800], Loss: 0.5857
+Epoch [236/800], Loss: 0.5824
+Epoch [237/800], Loss: 0.5774
+Epoch [238/800], Loss: 0.5740
+Epoch [239/800], Loss: 0.5776
+Epoch [240/800], Saved!
+Epoch [240/800], Loss: 0.5687
+Epoch [241/800], Loss: 0.5711
+Epoch [242/800], Loss: 0.5728
+Epoch [243/800], Saved!
+Epoch [243/800], Loss: 0.5649
+Epoch [244/800], Loss: 0.5658
+Epoch [245/800], Loss: 0.5677
+Epoch [246/800], Loss: 0.5717
+Epoch [247/800], Loss: 0.5678
+Epoch [248/800], Loss: 0.5705
+Epoch [249/800], Loss: 0.5650
+Epoch [250/800], Saved!
+Epoch [250/800], Loss: 0.5628
+Epoch [251/800], Loss: 0.5645
+Epoch [252/800], Saved!
+Epoch [252/800], Loss: 0.5627
+Epoch [253/800], Saved!
+Epoch [253/800], Loss: 0.5543
+Epoch [254/800], Loss: 0.5635
+Epoch [255/800], Loss: 0.5615
+Epoch [256/800], Saved!
+Epoch [256/800], Loss: 0.5537
+Epoch [257/800], Loss: 0.5548
+Epoch [258/800], Loss: 0.5616
+Epoch [259/800], Loss: 0.5642
+Epoch [260/800], Loss: 0.5537
+Epoch [261/800], Loss: 0.5623
+Epoch [262/800], Loss: 0.5624
+Epoch [263/800], Loss: 0.5566
+Epoch [264/800], Saved!
+Epoch [264/800], Loss: 0.5499
+Epoch [265/800], Saved!
+Epoch [265/800], Loss: 0.5437
+Epoch [266/800], Loss: 0.5498
+Epoch [267/800], Saved!
+Epoch [267/800], Loss: 0.5431
+Epoch [268/800], Saved!
+Epoch [268/800], Loss: 0.5396
+Epoch [269/800], Loss: 0.5420
+Epoch [270/800], Loss: 0.5517
+Epoch [271/800], Loss: 0.5472
+Epoch [272/800], Loss: 0.5470
+Epoch [273/800], Loss: 0.5469
+Epoch [274/800], Loss: 0.5445
+Epoch [275/800], Loss: 0.5439
+Epoch [276/800], Loss: 0.5398
+Epoch [277/800], Saved!
+Epoch [277/800], Loss: 0.5386
+Epoch [278/800], Loss: 0.5403
+Epoch [279/800], Saved!
+Epoch [279/800], Loss: 0.5346
+Epoch [280/800], Loss: 0.5350
+Epoch [281/800], Saved!
+Epoch [281/800], Loss: 0.5312
+Epoch [282/800], Loss: 0.5436
+Epoch [283/800], Loss: 0.5446
+Epoch [284/800], Loss: 0.5447
+Epoch [285/800], Loss: 0.5383
+Epoch [286/800], Loss: 0.5318
+Epoch [287/800], Loss: 0.5437
+Epoch [288/800], Loss: 0.5467
+Epoch [289/800], Loss: 0.5315
+Epoch [290/800], Loss: 0.5388
+Epoch [291/800], Saved!
+Epoch [291/800], Loss: 0.5254
+Epoch [292/800], Loss: 0.5431
+Epoch [293/800], Loss: 0.5384
+Epoch [294/800], Loss: 0.5437
+Epoch [295/800], Loss: 0.5365
+Epoch [296/800], Loss: 0.5417
+Epoch [297/800], Loss: 0.5321
+Epoch [298/800], Loss: 0.5276
+Epoch [299/800], Loss: 0.5286
+Epoch [300/800], Loss: 0.5348
+Epoch [301/800], Loss: 0.5290
+Epoch [302/800], Loss: 0.5360
+Epoch [303/800], Loss: 0.5264
+Epoch [304/800], Saved!
+Epoch [304/800], Loss: 0.5202
+Epoch [305/800], Loss: 0.5237
+Epoch [306/800], Loss: 0.5226
+Epoch [307/800], Loss: 0.5343
+Epoch [308/800], Saved!
+Epoch [308/800], Loss: 0.5115
+Epoch [309/800], Loss: 0.5128
+Epoch [310/800], Loss: 0.5189
+Epoch [311/800], Loss: 0.5217
+Epoch [312/800], Loss: 0.5224
+Epoch [313/800], Loss: 0.5312
+Epoch [314/800], Loss: 0.5208
+Epoch [315/800], Loss: 0.5295
+Epoch [316/800], Loss: 0.5344
+Epoch [317/800], Loss: 0.5151
+Epoch [318/800], Loss: 0.5159
+Epoch [319/800], Loss: 0.5172
+Epoch [320/800], Loss: 0.5144
+Epoch [321/800], Saved!
+Epoch [321/800], Loss: 0.5098
+Epoch [322/800], Saved!
+Epoch [322/800], Loss: 0.5046
+Epoch [323/800], Loss: 0.5099
+Epoch [324/800], Loss: 0.5229
+Epoch [325/800], Loss: 0.5160
+Epoch [326/800], Loss: 0.5210
+Epoch [327/800], Loss: 0.5168
+Epoch [328/800], Loss: 0.5125
+Epoch [329/800], Loss: 0.5092
+Epoch [330/800], Loss: 0.5175
+Epoch [331/800], Loss: 0.5198
+Epoch [332/800], Loss: 0.5076
+Epoch [333/800], Loss: 0.5185
+Epoch [334/800], Loss: 0.5125
+Epoch [335/800], Loss: 0.5082
+Epoch [336/800], Loss: 0.5091
+Epoch [337/800], Saved!
+Epoch [337/800], Loss: 0.5039
+Epoch [338/800], Loss: 0.5161
+Epoch [339/800], Loss: 0.5081
+Epoch [340/800], Saved!
+Epoch [340/800], Loss: 0.5010
+Epoch [341/800], Saved!
+Epoch [341/800], Loss: 0.4971
+Epoch [342/800], Loss: 0.4988
+Epoch [343/800], Loss: 0.5057
+Epoch [344/800], Saved!
+Epoch [344/800], Loss: 0.4959
+Epoch [345/800], Loss: 0.5049
+Epoch [346/800], Loss: 0.5045
+Epoch [347/800], Loss: 0.5083
+Epoch [348/800], Loss: 0.5054
+Epoch [349/800], Loss: 0.5035
+Epoch [350/800], Loss: 0.5050
+Epoch [351/800], Loss: 0.5175
+Epoch [352/800], Loss: 0.5093
+Epoch [353/800], Loss: 0.4986
+Epoch [354/800], Saved!
+Epoch [354/800], Loss: 0.4906
+Epoch [355/800], Loss: 0.4939
+Epoch [356/800], Loss: 0.4990
+Epoch [357/800], Loss: 0.4987
+Epoch [358/800], Loss: 0.4976
+Epoch [359/800], Loss: 0.4939
+Epoch [360/800], Loss: 0.4989
+Epoch [361/800], Loss: 0.5022
+Epoch [362/800], Loss: 0.5042
+Epoch [363/800], Loss: 0.4935
+Epoch [364/800], Loss: 0.4972
+Epoch [365/800], Loss: 0.5017
+Epoch [366/800], Loss: 0.4931
+Epoch [367/800], Saved!
+Epoch [367/800], Loss: 0.4905
+Epoch [368/800], Saved!
+Epoch [368/800], Loss: 0.4866
+Epoch [369/800], Loss: 0.4947
+Epoch [370/800], Loss: 0.4984
+Epoch [371/800], Loss: 0.4913
+Epoch [372/800], Loss: 0.4905
+Epoch [373/800], Saved!
+Epoch [373/800], Loss: 0.4819
+Epoch [374/800], Loss: 0.4903
+Epoch [375/800], Loss: 0.4852
+Epoch [376/800], Loss: 0.4844
+Epoch [377/800], Loss: 0.4890
+Epoch [378/800], Loss: 0.5057
+Epoch [379/800], Loss: 0.4842
+Epoch [380/800], Loss: 0.4912
+Epoch [381/800], Loss: 0.4837
+Epoch [382/800], Saved!
+Epoch [382/800], Loss: 0.4806
+Epoch [383/800], Loss: 0.4871
+Epoch [384/800], Saved!
+Epoch [384/800], Loss: 0.4789
+Epoch [385/800], Loss: 0.4930
+Epoch [386/800], Loss: 0.4813
+Epoch [387/800], Saved!
+Epoch [387/800], Loss: 0.4770
+Epoch [388/800], Saved!
+Epoch [388/800], Loss: 0.4672
+Epoch [389/800], Loss: 0.4734
+Epoch [390/800], Loss: 0.4880
+Epoch [391/800], Loss: 0.4738
+Epoch [392/800], Loss: 0.4883
+Epoch [393/800], Loss: 0.4727
+Epoch [394/800], Loss: 0.4928
+Epoch [395/800], Loss: 0.4858
+Epoch [396/800], Loss: 0.4876
+Epoch [397/800], Loss: 0.4778
+Epoch [398/800], Loss: 0.4827
+Epoch [399/800], Loss: 0.4698
+Epoch [400/800], Loss: 0.4763
+Epoch [401/800], Loss: 0.4790
+Epoch [402/800], Loss: 0.4693
+Epoch [403/800], Loss: 0.4709
+Epoch [404/800], Loss: 0.4730
+Epoch [405/800], Loss: 0.4760
+Epoch [406/800], Loss: 0.4951
+Epoch [407/800], Loss: 0.4739
+Epoch [408/800], Loss: 0.4736
+Epoch [409/800], Loss: 0.4784
+Epoch [410/800], Loss: 0.4713
+Epoch [411/800], Loss: 0.4804
+Epoch [412/800], Loss: 0.4802
+Epoch [413/800], Loss: 0.4836
+Epoch [414/800], Loss: 0.4797
+Epoch [415/800], Loss: 0.4721
+Epoch [416/800], Loss: 0.4864
+Epoch [417/800], Loss: 0.4718
+Epoch [418/800], Loss: 0.4703
+Epoch [419/800], Loss: 0.4881
+Epoch [420/800], Loss: 0.4691
+Epoch [421/800], Saved!
+Epoch [421/800], Loss: 0.4635
+Epoch [422/800], Loss: 0.4709
+Epoch [423/800], Loss: 0.4804
+Epoch [424/800], Loss: 0.4654
+Epoch [425/800], Loss: 0.4757
+Epoch [426/800], Loss: 0.4898
+Epoch [427/800], Saved!
+Epoch [427/800], Loss: 0.4617
+Epoch [428/800], Saved!
+Epoch [428/800], Loss: 0.4609
+Epoch [429/800], Loss: 0.4671
+Epoch [430/800], Loss: 0.4649
+Epoch [431/800], Saved!
+Epoch [431/800], Loss: 0.4590
+Epoch [432/800], Loss: 0.4933
+Epoch [433/800], Saved!
+Epoch [433/800], Loss: 0.4566
+Epoch [434/800], Loss: 0.4578
+Epoch [435/800], Loss: 0.4675
+Epoch [436/800], Loss: 0.4590
+Epoch [437/800], Loss: 0.4696
+Epoch [438/800], Loss: 0.4698
+Epoch [439/800], Loss: 0.4672
+Epoch [440/800], Loss: 0.4783
+Epoch [441/800], Loss: 0.4706
+Epoch [442/800], Loss: 0.4809
+Epoch [443/800], Loss: 0.4713
+Epoch [444/800], Loss: 0.4628
+Epoch [445/800], Saved!
+Epoch [445/800], Loss: 0.4550
+Epoch [446/800], Loss: 0.4582
+Epoch [447/800], Loss: 0.4633
+Epoch [448/800], Loss: 0.4579
+Epoch [449/800], Loss: 0.4589
+Epoch [450/800], Loss: 0.4698
+Epoch [451/800], Loss: 0.4678
+Epoch [452/800], Loss: 0.4577
+Epoch [453/800], Loss: 0.4599
+Epoch [454/800], Loss: 0.4620
+Epoch [455/800], Saved!
+Epoch [455/800], Loss: 0.4495
+Epoch [456/800], Loss: 0.4575
+Epoch [457/800], Loss: 0.4602
+Epoch [458/800], Loss: 0.4576
+Epoch [459/800], Loss: 0.4539
+Epoch [460/800], Saved!
+Epoch [460/800], Loss: 0.4468
+Epoch [461/800], Loss: 0.4508
+Epoch [462/800], Saved!
+Epoch [462/800], Loss: 0.4464
+Epoch [463/800], Loss: 0.4525
+Epoch [464/800], Loss: 0.4609
+Epoch [465/800], Loss: 0.4574
+Epoch [466/800], Loss: 0.4718
+Epoch [467/800], Loss: 0.4553
+Epoch [468/800], Loss: 0.4604
+Epoch [469/800], Loss: 0.4608
+Epoch [470/800], Loss: 0.4591
+Epoch [471/800], Loss: 0.4507
+Epoch [472/800], Loss: 0.4475
+Epoch [473/800], Loss: 0.4664
+Epoch [474/800], Loss: 0.4477
+Epoch [475/800], Loss: 0.4519
+Epoch [476/800], Loss: 0.4526
+Epoch [477/800], Loss: 0.4619
+Epoch [478/800], Loss: 0.4533
+Epoch [479/800], Loss: 0.4568
+Epoch [480/800], Loss: 0.4548
+Epoch [481/800], Loss: 0.4509
+Epoch [482/800], Loss: 0.4500
+Epoch [483/800], Loss: 0.4492
+Epoch [484/800], Saved!
+Epoch [484/800], Loss: 0.4448
+Epoch [485/800], Loss: 0.4483
+Epoch [486/800], Loss: 0.4502
+Epoch [487/800], Saved!
+Epoch [487/800], Loss: 0.4426
+Epoch [488/800], Saved!
+Epoch [488/800], Loss: 0.4413
+Epoch [489/800], Loss: 0.4485
+Epoch [490/800], Loss: 0.4544
+Epoch [491/800], Loss: 0.4517
+Epoch [492/800], Loss: 0.4502
+Epoch [493/800], Loss: 0.4452
+Epoch [494/800], Loss: 0.4464
+Epoch [495/800], Loss: 0.4558
+Epoch [496/800], Loss: 0.4596
+Epoch [497/800], Loss: 0.4640
+Epoch [498/800], Loss: 0.4523
+Epoch [499/800], Loss: 0.4502
+Epoch [500/800], Loss: 0.4439
+Epoch [501/800], Loss: 0.4437
+Epoch [502/800], Loss: 0.4510
+Epoch [503/800], Loss: 0.4528
+Epoch [504/800], Loss: 0.4529
+Epoch [505/800], Saved!
+Epoch [505/800], Loss: 0.4404
+Epoch [506/800], Loss: 0.4428
+Epoch [507/800], Loss: 0.4603
+Epoch [508/800], Loss: 0.4447
+Epoch [509/800], Loss: 0.4510
+Epoch [510/800], Loss: 0.4424
+Epoch [511/800], Loss: 0.4520
+Epoch [512/800], Loss: 0.4553
+Epoch [513/800], Loss: 0.4407
+Epoch [514/800], Loss: 0.4541
+Epoch [515/800], Loss: 0.4572
+Epoch [516/800], Loss: 0.4428
+Epoch [517/800], Loss: 0.4456
+Epoch [518/800], Loss: 0.4425
+Epoch [519/800], Loss: 0.4416
+Epoch [520/800], Loss: 0.4489
+Epoch [521/800], Saved!
+Epoch [521/800], Loss: 0.4385
+Epoch [522/800], Saved!
+Epoch [522/800], Loss: 0.4367
+Epoch [523/800], Loss: 0.4568
+Epoch [524/800], Loss: 0.4427
+Epoch [525/800], Loss: 0.4395
+Epoch [526/800], Loss: 0.4429
+Epoch [527/800], Loss: 0.4576
+Epoch [528/800], Loss: 0.4449
+Epoch [529/800], Loss: 0.4584
+Epoch [530/800], Loss: 0.4492
+Epoch [531/800], Loss: 0.4488
+Epoch [532/800], Loss: 0.4390
+Epoch [533/800], Loss: 0.4434
+Epoch [534/800], Loss: 0.4446
+Epoch [535/800], Loss: 0.4375
+Epoch [536/800], Loss: 0.4541
+Epoch [537/800], Loss: 0.4461
+Epoch [538/800], Saved!
+Epoch [538/800], Loss: 0.4360
+Epoch [539/800], Loss: 0.4405
+Epoch [540/800], Loss: 0.4422
+Epoch [541/800], Loss: 0.4433
+Epoch [542/800], Saved!
+Epoch [542/800], Loss: 0.4260
+Epoch [543/800], Loss: 0.4470
+Epoch [544/800], Loss: 0.4348
+Epoch [545/800], Loss: 0.4447
+Epoch [546/800], Loss: 0.4378
+Epoch [547/800], Loss: 0.4468
+Epoch [548/800], Loss: 0.4289
+Epoch [549/800], Loss: 0.4300
+Epoch [550/800], Loss: 0.4327
+Epoch [551/800], Loss: 0.4287
+Epoch [552/800], Loss: 0.4272
+Epoch [553/800], Loss: 0.4326
+Epoch [554/800], Loss: 0.4307
+Epoch [555/800], Loss: 0.4395
+Epoch [556/800], Loss: 0.4325
+Epoch [557/800], Loss: 0.4357
+Epoch [558/800], Loss: 0.4290
+Epoch [559/800], Loss: 0.4431
+Epoch [560/800], Loss: 0.4338
+Epoch [561/800], Loss: 0.4297
+Epoch [562/800], Saved!
+Epoch [562/800], Loss: 0.4256
+Epoch [563/800], Loss: 0.4421
+Epoch [564/800], Saved!
+Epoch [564/800], Loss: 0.4198
+Epoch [565/800], Loss: 0.4256
+Epoch [566/800], Loss: 0.4428
+Epoch [567/800], Loss: 0.4357
+Epoch [568/800], Loss: 0.4366
+Epoch [569/800], Loss: 0.4271
+Epoch [570/800], Loss: 0.4454
+Epoch [571/800], Loss: 0.4258
+Epoch [572/800], Loss: 0.4324
+Epoch [573/800], Loss: 0.4281
+Epoch [574/800], Saved!
+Epoch [574/800], Loss: 0.4182
+Epoch [575/800], Loss: 0.4368
+Epoch [576/800], Loss: 0.4257
+Epoch [577/800], Loss: 0.4364
+Epoch [578/800], Loss: 0.4403
+Epoch [579/800], Loss: 0.4291
+Epoch [580/800], Loss: 0.4198
+Epoch [581/800], Loss: 0.4339
+Epoch [582/800], Loss: 0.4214
+Epoch [583/800], Loss: 0.4393
+Epoch [584/800], Loss: 0.4253
+Epoch [585/800], Loss: 0.4286
+Epoch [586/800], Loss: 0.4384
+Epoch [587/800], Loss: 0.4237
+Epoch [588/800], Loss: 0.4324
+Epoch [589/800], Loss: 0.4278
+Epoch [590/800], Loss: 0.4205
+Epoch [591/800], Loss: 0.4278
+Epoch [592/800], Loss: 0.4464
+Epoch [593/800], Loss: 0.4321
+Epoch [594/800], Loss: 0.4433
+Epoch [595/800], Loss: 0.4326
+Epoch [596/800], Loss: 0.4515
+Epoch [597/800], Loss: 0.4237
+Epoch [598/800], Loss: 0.4198
+Epoch [599/800], Loss: 0.4195
+Epoch [600/800], Loss: 0.4306
+Epoch [601/800], Saved!
+Epoch [601/800], Loss: 0.4142
+Epoch [602/800], Loss: 0.4577
+Epoch [603/800], Loss: 0.4273
+Epoch [604/800], Loss: 0.4159
+Epoch [605/800], Saved!
+Epoch [605/800], Loss: 0.4111
+Epoch [606/800], Loss: 0.4231
+Epoch [607/800], Loss: 0.4265
+Epoch [608/800], Loss: 0.4213
+Epoch [609/800], Loss: 0.4295
+Epoch [610/800], Loss: 0.4328
+Epoch [611/800], Loss: 0.4248
+Epoch [612/800], Saved!
+Epoch [612/800], Loss: 0.4096
+Epoch [613/800], Loss: 0.4225
+Epoch [614/800], Loss: 0.4356
+Epoch [615/800], Loss: 0.4296
+Epoch [616/800], Loss: 0.4342
+Epoch [617/800], Loss: 0.4224
+Epoch [618/800], Loss: 0.4247
+Epoch [619/800], Loss: 0.4206
+Epoch [620/800], Loss: 0.4177
+Epoch [621/800], Loss: 0.4282
+Epoch [622/800], Loss: 0.4184
+Epoch [623/800], Loss: 0.4218
+Epoch [624/800], Loss: 0.4301
+Epoch [625/800], Loss: 0.4161
+Epoch [626/800], Loss: 0.4195
+Epoch [627/800], Loss: 0.4353
+Epoch [628/800], Loss: 0.4194
+Epoch [629/800], Loss: 0.4226
+Epoch [630/800], Loss: 0.4312
+Epoch [631/800], Loss: 0.4361
+Epoch [632/800], Loss: 0.4156
+Epoch [633/800], Loss: 0.4344
+Epoch [634/800], Loss: 0.4220
+Epoch [635/800], Loss: 0.4259
+Epoch [636/800], Loss: 0.4251
+Epoch [637/800], Loss: 0.4293
+Epoch [638/800], Loss: 0.4330
+Epoch [639/800], Loss: 0.4424
+Epoch [640/800], Loss: 0.4175
+Epoch [641/800], Loss: 0.4216
+Epoch [642/800], Loss: 0.4101
+Epoch [643/800], Loss: 0.4132
+Epoch [644/800], Saved!
+Epoch [644/800], Loss: 0.4077
+Epoch [645/800], Loss: 0.4209
+Epoch [646/800], Loss: 0.4143
+Epoch [647/800], Saved!
+Epoch [647/800], Loss: 0.4076
+Epoch [648/800], Loss: 0.4250
+Epoch [649/800], Loss: 0.4197
+Epoch [650/800], Loss: 0.4180
+Epoch [651/800], Loss: 0.4099
+Epoch [652/800], Loss: 0.4253
+Epoch [653/800], Loss: 0.4173
+Epoch [654/800], Loss: 0.4238
+Epoch [655/800], Loss: 0.4218
+Epoch [656/800], Loss: 0.4264
+Epoch [657/800], Loss: 0.4136
+Epoch [658/800], Loss: 0.4099
+Epoch [659/800], Loss: 0.4099
+Epoch [660/800], Loss: 0.4205
+Epoch [661/800], Loss: 0.4102
+Epoch [662/800], Loss: 0.4112
+Epoch [663/800], Loss: 0.4212
+Epoch [664/800], Loss: 0.4150
+Epoch [665/800], Loss: 0.4151
+Epoch [666/800], Saved!
+Epoch [666/800], Loss: 0.4055
+Epoch [667/800], Loss: 0.4120
+Epoch [668/800], Loss: 0.4165
+Epoch [669/800], Loss: 0.4193
+Epoch [670/800], Loss: 0.4203
+Epoch [671/800], Saved!
+Epoch [671/800], Loss: 0.4053
+Epoch [672/800], Loss: 0.4087
+Epoch [673/800], Loss: 0.4223
+Epoch [674/800], Loss: 0.4244
+Epoch [675/800], Loss: 0.4102
+Epoch [676/800], Loss: 0.4103
+Epoch [677/800], Loss: 0.4136
+Epoch [678/800], Loss: 0.4212
+Epoch [679/800], Loss: 0.4147
+Epoch [680/800], Loss: 0.4091
+Epoch [681/800], Loss: 0.4054
+Epoch [682/800], Saved!
+Epoch [682/800], Loss: 0.3996
+Epoch [683/800], Loss: 0.4029
+Epoch [684/800], Loss: 0.4073
+Epoch [685/800], Loss: 0.4122
+Epoch [686/800], Loss: 0.4196
+Epoch [687/800], Loss: 0.4065
+Epoch [688/800], Loss: 0.4279
+Epoch [689/800], Loss: 0.4056
+Epoch [690/800], Loss: 0.4116
+Epoch [691/800], Loss: 0.4061
+Epoch [692/800], Loss: 0.4007
+Epoch [693/800], Loss: 0.4071
+Epoch [694/800], Loss: 0.4128
+Epoch [695/800], Loss: 0.4216
+Epoch [696/800], Loss: 0.4141
+Epoch [697/800], Loss: 0.4055
+Epoch [698/800], Loss: 0.4011
+Epoch [699/800], Loss: 0.4075
+Epoch [700/800], Loss: 0.4103
+Epoch [701/800], Loss: 0.4064
+Epoch [702/800], Saved!
+Epoch [702/800], Loss: 0.3993
+Epoch [703/800], Loss: 0.4154
+Epoch [704/800], Loss: 0.4080
+Epoch [705/800], Loss: 0.4065
+Epoch [706/800], Loss: 0.4148
+Epoch [707/800], Loss: 0.4107
+Epoch [708/800], Loss: 0.4230
+Epoch [709/800], Loss: 0.4082
+Epoch [710/800], Loss: 0.4111
+Epoch [711/800], Loss: 0.4206
+Epoch [712/800], Loss: 0.4030
+Epoch [713/800], Loss: 0.4047
+Epoch [714/800], Loss: 0.3996
+Epoch [715/800], Loss: 0.4015
+Epoch [716/800], Saved!
+Epoch [716/800], Loss: 0.3979
+Epoch [717/800], Loss: 0.4023
+Epoch [718/800], Loss: 0.4012
+Epoch [719/800], Loss: 0.4042
+Epoch [720/800], Loss: 0.4085
+Epoch [721/800], Loss: 0.4166
+Epoch [722/800], Saved!
+Epoch [722/800], Loss: 0.3972
+Epoch [723/800], Loss: 0.4095
+Epoch [724/800], Saved!
+Epoch [724/800], Loss: 0.3946
+Epoch [725/800], Loss: 0.4028
+Epoch [726/800], Loss: 0.4101
+Epoch [727/800], Loss: 0.4029
+Epoch [728/800], Loss: 0.3966
+Epoch [729/800], Loss: 0.3954
+Epoch [730/800], Loss: 0.4027
+Epoch [731/800], Loss: 0.3996
+Epoch [732/800], Loss: 0.4105
+Epoch [733/800], Loss: 0.4015
+Epoch [734/800], Loss: 0.4131
+Epoch [735/800], Saved!
+Epoch [735/800], Loss: 0.3945
+Epoch [736/800], Loss: 0.3978
+Epoch [737/800], Loss: 0.4018
+Epoch [738/800], Loss: 0.3966
+Epoch [739/800], Loss: 0.3970
+Epoch [740/800], Saved!
+Epoch [740/800], Loss: 0.3868
+Epoch [741/800], Loss: 0.3966
+Epoch [742/800], Loss: 0.3899
+Epoch [743/800], Loss: 0.3908
+Epoch [744/800], Loss: 0.4069
+Epoch [745/800], Loss: 0.4021
+Epoch [746/800], Loss: 0.4380
+Epoch [747/800], Loss: 0.4097
+Epoch [748/800], Loss: 0.4058
+Epoch [749/800], Loss: 0.3984
+Epoch [750/800], Loss: 0.3997
+Epoch [751/800], Loss: 0.4131
+Epoch [752/800], Loss: 0.4041
+Epoch [753/800], Loss: 0.3951
+Epoch [754/800], Loss: 0.3960
+Epoch [755/800], Saved!
+Epoch [755/800], Loss: 0.3867
+Epoch [756/800], Loss: 0.3869
+Epoch [757/800], Loss: 0.3986
+Epoch [758/800], Saved!
+Epoch [758/800], Loss: 0.3863
+Epoch [759/800], Loss: 0.3891
+Epoch [760/800], Loss: 0.3881
+Epoch [761/800], Loss: 0.4046
+Epoch [762/800], Loss: 0.3934
+Epoch [763/800], Loss: 0.3893
+Epoch [764/800], Loss: 0.4000
+Epoch [765/800], Loss: 0.3983
+Epoch [766/800], Loss: 0.4049
+Epoch [767/800], Loss: 0.4017
+Epoch [768/800], Loss: 0.3970
+Epoch [769/800], Loss: 0.3951
+Epoch [770/800], Loss: 0.4160
+Epoch [771/800], Loss: 0.3917
+Epoch [772/800], Loss: 0.3894
+Epoch [773/800], Loss: 0.3921
+Epoch [774/800], Loss: 0.3910
+Epoch [775/800], Loss: 0.3889
+Epoch [776/800], Saved!
+Epoch [776/800], Loss: 0.3846
+Epoch [777/800], Saved!
+Epoch [777/800], Loss: 0.3834
+Epoch [778/800], Loss: 0.4063
+Epoch [779/800], Loss: 0.3953
+Epoch [780/800], Loss: 0.3972
+Epoch [781/800], Loss: 0.4014
+Epoch [782/800], Loss: 0.3915
+Epoch [783/800], Loss: 0.3965
+Epoch [784/800], Loss: 0.4041
+Epoch [785/800], Loss: 0.4177
+Epoch [786/800], Loss: 0.4031
+Epoch [787/800], Loss: 0.3946
+Epoch [788/800], Loss: 0.3913
+Epoch [789/800], Loss: 0.3950
+Epoch [790/800], Loss: 0.3941
+Epoch [791/800], Loss: 0.3939
+Epoch [792/800], Loss: 0.3936
+Epoch [793/800], Loss: 0.3880
+Epoch [794/800], Loss: 0.4011
+Epoch [795/800], Loss: 0.3893
+Epoch [796/800], Loss: 0.3836
+Epoch [797/800], Saved!
+Epoch [797/800], Loss: 0.3830
+Epoch [798/800], Loss: 0.3854
+Epoch [799/800], Loss: 0.4059
+Epoch [800/800], Loss: 0.3989
